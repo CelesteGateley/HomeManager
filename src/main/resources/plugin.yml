@@ -1,0 +1,7 @@
+name: HomeManager
+version: ${project.version}
+main: xyz.fluxinc.homemanager.HomeManager
+api-version: 1.13
+authors: [CelesteMagisteel]
+description: More Advanced SetHome manager
+website: https://fluxinc.xyz
