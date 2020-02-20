@@ -20,12 +20,12 @@ public class HomeSet {
     }
 
     public HomeSet addHome(Player player) {
-        homes.add(new Home(player.getLocation().getX(), player.getLocation().getY(), player.getLocation().getZ(), player.getLocation().getWorld().getName()));
+        homes.add(new Home(player, player.getLocation().getX(), player.getLocation().getY(), player.getLocation().getZ(), player.getLocation().getWorld().getName()));
         return this;
     }
 
-    public HomeSet addHome(Location location) {
-        homes.add(new Home(location.getX(), location.getY(), location.getZ(), location.getWorld().getName()));
+    public HomeSet addHome(Player player, Location location) {
+        homes.add(new Home(player, location.getX(), location.getY(), location.getZ(), location.getWorld().getName()));
         return this;
     }
 
